@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-pied-piper" aria-hidden="true"></i></span>
+                        <span class="title">
+                            <h2>Brand Name</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">DashBoard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="cardBx">
+                <div class="card">
+                    <div>
+                        <div class="numbers">2,403</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">69</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">93</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$5,407</div>
+                        <div class="cardName">Earnings</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View all</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1999</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Window Coolers</td>
+                                <td>$117</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Vacuum Cleaner</td>
+                                <td>$314</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Home Theatre</td>
+                                <td>$699</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>LED</td>
+                                <td>$3249</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Vacuum Cleaner</td>
+                                <td>$314</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Home Theatre</td>
+                                <td>$699</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$900</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Window Coolers</td>
+                                <td>$117</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img1.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>Angela</h4><span>Paris</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img2.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>David</h4><span>Italy</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img3.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>Reyan</h4><span>Aston-Villa</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img4.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>Kevin</h4><span>Vatican City</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img5.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>Seilla</h4><span>New Vinnea</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img6.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>Simpson</h4><span>London</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img7.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>Kiron</h4><span>Chicago</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="./img/img8.jpg" alt=""></div>
+                                </td>
+                                <td>
+                                    <h4>Christin</h4><span>Brazil</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector(".toggle");
+            let navigation = document.querySelector(".navigation");
+            let main = document.querySelector(".main");
+            toggle.classList.toggle("active");
+            navigation.classList.toggle("active");
+            main.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
